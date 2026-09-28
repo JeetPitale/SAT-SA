@@ -1,0 +1,31 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Test & reports
+.pytest_cache/
+.coverage
+htmlcov/
+test_reportlab.pdf
+
+# Data lake generated files
+data/lake/*
+!data/lake/.gitkeep
+data/audit_chain.jsonl
+
+# Scratch & temporary assets
+scratch/
+*.backup.pptx
