@@ -63,7 +63,13 @@ class DataLakeEngine:
         return parquet_path.exists()
 
     def get_cse_ids(self) -> List[str]:
-        if not self.table_exists("assets"):
-            return []
-        res = self.query_df("SELECT DISTINCT cse_id FROM assets ORDER BY cse_id")
-        return res["cse_id"].tolist()
+        for tbl in ["assets", "alerts", "cases", "self_assessed_metrics"]:
+            if self.table_exists(tbl):
+                try:
+                    res = self.query_df(f"SELECT DISTINCT cse_id FROM {tbl} WHERE cse_id IS NOT NULL ORDER BY cse_id")
+                    if isinstance(res, pd.DataFrame) and "cse_id" in res.columns and not res.empty:
+                        return [str(x) for x in res["cse_id"].dropna().tolist()]
+                except Exception:
+                    pass
+        return []
+

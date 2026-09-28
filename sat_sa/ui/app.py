@@ -156,51 +156,63 @@ def get_lake_and_chain():
 
 lake, audit_chain = get_lake_and_chain()
 
-# Auto-initialize if empty
-if not lake.table_exists("alerts"):
-    with st.spinner("Initializing default supervisory benchmark dataset..."):
-        gen = SyntheticSOCGenerator(seed=42)
-        tables = gen.generate_all(num_cses=16, days=30)
-        ingest = IngestionEngine(lake=lake, audit_chain=audit_chain)
-        ingest.ingest_datasets(tables, submission_source="INITIAL_BOOTSTRAP")
-        scoring = ScoringEngine()
-        scoring.evaluate_all_entities(lake)
-        st.rerun()
+# Auto-initialize if empty or incomplete
+def bootstrap_if_needed():
+    cse_ids = lake.get_cse_ids()
+    if not lake.table_exists("alerts") or not lake.table_exists("scores") or len(cse_ids) == 0:
+        with st.spinner("Initializing supervisory benchmark dataset across 16 critical entities..."):
+            gen = SyntheticSOCGenerator(seed=42)
+            tables = gen.generate_all(num_cses=16, days=30)
+            ingest = IngestionEngine(lake=lake, audit_chain=audit_chain)
+            ingest.ingest_datasets(tables, submission_source="INITIAL_BOOTSTRAP")
+            scoring = ScoringEngine()
+            scoring.evaluate_all_entities(lake)
 
+bootstrap_if_needed()
 
 from sat_sa.detectors.base import SupervisoryFinding
 
-# Instant Fast Load Function (Reads from pre-persisted disk cache in 0.002s)
+# Instant Fast Load Function (Reads from pre-persisted disk cache)
 def get_cached_scores_and_findings():
     findings_json_path = lake.lake_dir / "findings.json"
     if lake.table_exists("scores") and findings_json_path.exists():
         try:
             scores_df = lake.query_df("SELECT * FROM scores ORDER BY rank")
-            with open(findings_json_path, "r", encoding="utf-8") as fp:
-                raw_findings = json.load(fp)
-            findings_map = {
-                cse: [SupervisoryFinding(**f) for f in f_list]
-                for cse, f_list in raw_findings.items()
-            }
-            return scores_df, findings_map
+            if isinstance(scores_df, pd.DataFrame) and not scores_df.empty and "supervisory_status" in scores_df.columns:
+                with open(findings_json_path, "r", encoding="utf-8") as fp:
+                    raw_findings = json.load(fp)
+                findings_map = {
+                    cse: [SupervisoryFinding(**f) for f in f_list]
+                    for cse, f_list in raw_findings.items()
+                }
+                return scores_df, findings_map
         except Exception as e:
             print(f"Cache load fallback: {e}")
             
     scoring = ScoringEngine()
-    return scoring.evaluate_all_entities(lake)
+    scores_df, findings_map = scoring.evaluate_all_entities(lake)
+    if scores_df.empty or "supervisory_status" not in scores_df.columns:
+        bootstrap_if_needed()
+        scores_df, findings_map = scoring.evaluate_all_entities(lake)
+    return scores_df, findings_map
 
 scores_df, findings_map = get_cached_scores_and_findings()
 
-# Global Stats
+# Global Stats (Safely computed)
 total_cses = len(scores_df)
-urgent_cses = sum(1 for s in scores_df["supervisory_status"] if s == "URGENT_INSPECTION")
-monitor_cses = sum(1 for s in scores_df["supervisory_status"] if s == "MONITOR")
-review_recommended = urgent_cses + monitor_cses
-review_pct = int(round((review_recommended / max(1, total_cses)) * 100))
+if not scores_df.empty and "supervisory_status" in scores_df.columns:
+    urgent_cses = sum(1 for s in scores_df["supervisory_status"] if s == "URGENT_INSPECTION")
+    monitor_cses = sum(1 for s in scores_df["supervisory_status"] if s == "MONITOR")
+else:
+    urgent_cses, monitor_cses = 0, 0
 
-high_priority_findings = sum(sum(1 for f in f_list if f.severity in ("CRITICAL", "HIGH")) for f_list in findings_map.values())
-eg_count = sum(sum(1 for f in f_list if f.paradigm == "EXECUTION_GAP") for f_list in findings_map.values())
-ns_count = sum(sum(1 for f in f_list if f.paradigm == "NEGATIVE_SPACE") for f_list in findings_map.values())
+review_recommended = urgent_cses + monitor_cses
+review_pct = int(round((review_recommended / max(1, total_cses)) * 100)) if total_cses > 0 else 0
+
+high_priority_findings = sum(sum(1 for f in f_list if getattr(f, 'severity', '') in ("CRITICAL", "HIGH")) for f_list in findings_map.values())
+eg_count = sum(sum(1 for f in f_list if getattr(f, 'paradigm', '') == "EXECUTION_GAP") for f_list in findings_map.values())
+ns_count = sum(sum(1 for f in f_list if getattr(f, 'paradigm', '') == "NEGATIVE_SPACE") for f_list in findings_map.values())
+
 
 
 # Sidebar Structure

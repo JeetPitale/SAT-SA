@@ -115,10 +115,19 @@ class ScoringEngine:
                 **{f"score_{cap.lower().replace(' ', '_').replace('&', 'and')}": sub_scores[cap] for cap in CAPABILITY_AREAS},
             })
 
-        scores_df = pd.DataFrame(entity_rows)
-        if not scores_df.empty:
+        default_cols = [
+            "cse_id", "peer_group_id", "total_findings", "critical_findings",
+            "high_findings", "risk_score", "score_lower_bound", "score_upper_bound",
+            "supervisory_status", "rank"
+        ] + [f"score_{cap.lower().replace(' ', '_').replace('&', 'and')}" for cap in CAPABILITY_AREAS]
+
+        if not entity_rows:
+            scores_df = pd.DataFrame(columns=default_cols)
+        else:
+            scores_df = pd.DataFrame(entity_rows)
             scores_df = scores_df.sort_values(by="risk_score", ascending=False).reset_index(drop=True)
             scores_df["rank"] = range(1, len(scores_df) + 1)
+
 
         # Persist to disk for instant UI rendering
         try:
