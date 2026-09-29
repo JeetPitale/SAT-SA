@@ -21,10 +21,6 @@ ENV/
 htmlcov/
 test_reportlab.pdf
 
-# Data lake generated files
-data/lake/*
-!data/lake/.gitkeep
-data/audit_chain.jsonl
 
 # Scratch & temporary assets
 scratch/

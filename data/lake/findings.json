@@ -1,0 +1,1400 @@
+{
+  "CSE-001": [
+    {
+      "finding_id": "FND-CSE-001-EG04",
+      "cse_id": "CSE-001",
+      "detector_code": "EG-04",
+      "detector_name": "Template-Driven Boilerplate Notes",
+      "paradigm": "EXECUTION_GAP",
+      "capability_area": "Operational Discipline",
+      "severity": "HIGH",
+      "anomaly_score": 84.0,
+      "evidence": {
+        "duplicate_ratio": 0.7,
+        "total_clustered_cases": 611,
+        "cluster_count": 20,
+        "sample_boilerplate": [
+          {
+            "cluster_size": 73,
+            "case_ids_sample": [
+              "CSE-001-CAS-00677",
+              "CSE-001-CAS-00181",
+              "CSE-001-CAS-00447",
+              "CSE-001-CAS-00097",
+              "CSE-001-CAS-00099"
+            ],
+            "note_text": "Correlated firewall egress with threat intelligence feeds. External destination IP 198.51.100.192 identified as sinkholed domain. Endpoint quarantined via EDR isolation playbook. Artifacts collected for memory analysis. Escalated to Tier 2 IR."
+          },
+          {
+            "cluster_size": 32,
+            "case_ids_sample": [
+              "CSE-001-CAS-00677",
+              "CSE-001-CAS-00494",
+              "CSE-001-CAS-00003",
+              "CSE-001-CAS-00145",
+              "CSE-001-CAS-00060"
+            ],
+            "note_text": "Correlated firewall egress with threat intelligence feeds. External destination IP 198.51.100.192 identified as sinkholed domain. Endpoint quarantined via EDR isolation playbook. Artifacts collected for memory analysis. Escalated to Tier 2 IR."
+          },
+          {
+            "cluster_size": 44,
+            "case_ids_sample": [
+              "CSE-001-CAS-00702",
+              "CSE-001-CAS-00169",
+              "CSE-001-CAS-00327",
+              "CSE-001-CAS-00208",
+              "CSE-001-CAS-00385"
+            ],
+            "note_text": "Alert triggered on high outbound data transfer. Analyzed NetFlow export; traffic matched automated offsite database replication window (Jira REF-4572). No data breach indicators."
+          }
+        ]
+      },
+      "peer_baseline": {
+        "peer_median_duplicate_ratio": 0.08,
+        "peer_acceptable_threshold": "< 0.20"
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "70.0% of cases exhibit copy-paste boilerplate notes. Interview lead analysts to verify whether investigations follow standard operating procedures or superficial logging.",
+      "created_at": "2026-09-28T19:16:24.284433+00:00"
+    }
+  ],
+  "CSE-002": [
+    {
+      "finding_id": "FND-CSE-002-EG04",
+      "cse_id": "CSE-002",
+      "detector_code": "EG-04",
+      "detector_name": "Template-Driven Boilerplate Notes",
+      "paradigm": "EXECUTION_GAP",
+      "capability_area": "Operational Discipline",
+      "severity": "HIGH",
+      "anomaly_score": 88.6,
+      "evidence": {
+        "duplicate_ratio": 0.738,
+        "total_clustered_cases": 1652,
+        "cluster_count": 32,
+        "sample_boilerplate": [
+          {
+            "cluster_size": 118,
+            "case_ids_sample": [
+              "CSE-002-CAS-00901",
+              "CSE-002-CAS-01838",
+              "CSE-002-CAS-02198",
+              "CSE-002-CAS-00243",
+              "CSE-002-CAS-02122"
+            ],
+            "note_text": "Correlated firewall egress with threat intelligence feeds. External destination IP 198.51.100.37 identified as sinkholed domain. Endpoint quarantined via EDR isolation playbook. Artifacts collected for memory analysis. Escalated to Tier 2 IR."
+          },
+          {
+            "cluster_size": 192,
+            "case_ids_sample": [
+              "CSE-002-CAS-01968",
+              "CSE-002-CAS-01898",
+              "CSE-002-CAS-00853",
+              "CSE-002-CAS-01051",
+              "CSE-002-CAS-01077"
+            ],
+            "note_text": "Alert triggered on high outbound data transfer. Analyzed NetFlow export; traffic matched automated offsite database replication window (Jira REF-5125). No data breach indicators."
+          },
+          {
+            "cluster_size": 241,
+            "case_ids_sample": [
+              "CSE-002-CAS-01461",
+              "CSE-002-CAS-00498",
+              "CSE-002-CAS-01699",
+              "CSE-002-CAS-01346",
+              "CSE-002-CAS-00713"
+            ],
+            "note_text": "Correlated firewall egress with threat intelligence feeds. External destination IP 198.51.100.220 identified as sinkholed domain. Endpoint quarantined via EDR isolation playbook. Artifacts collected for memory analysis. Escalated to Tier 2 IR."
+          }
+        ]
+      },
+      "peer_baseline": {
+        "peer_median_duplicate_ratio": 0.08,
+        "peer_acceptable_threshold": "< 0.20"
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "73.8% of cases exhibit copy-paste boilerplate notes. Interview lead analysts to verify whether investigations follow standard operating procedures or superficial logging.",
+      "created_at": "2026-09-28T19:16:25.120072+00:00"
+    }
+  ],
+  "CSE-003": [
+    {
+      "finding_id": "FND-CSE-003-EG04",
+      "cse_id": "CSE-003",
+      "detector_code": "EG-04",
+      "detector_name": "Template-Driven Boilerplate Notes",
+      "paradigm": "EXECUTION_GAP",
+      "capability_area": "Operational Discipline",
+      "severity": "HIGH",
+      "anomaly_score": 91.3,
+      "evidence": {
+        "duplicate_ratio": 0.761,
+        "total_clustered_cases": 4098,
+        "cluster_count": 88,
+        "sample_boilerplate": [
+          {
+            "cluster_size": 303,
+            "case_ids_sample": [
+              "CSE-003-CAS-03176",
+              "CSE-003-CAS-00083",
+              "CSE-003-CAS-04126",
+              "CSE-003-CAS-04619",
+              "CSE-003-CAS-02159"
+            ],
+            "note_text": "Review of authentication telemetry showed successful Kerberos ticket request following multiple pre-auth failures from usr_707. Reset credentials and revoked active session tokens. User confirmed login attempt during travel."
+          },
+          {
+            "cluster_size": 312,
+            "case_ids_sample": [
+              "CSE-003-CAS-03274",
+              "CSE-003-CAS-03083",
+              "CSE-003-CAS-03585",
+              "CSE-003-CAS-00075",
+              "CSE-003-CAS-03459"
+            ],
+            "note_text": "Alert triggered on high outbound data transfer. Analyzed NetFlow export; traffic matched automated offsite database replication window (Jira REF-4594). No data breach indicators."
+          },
+          {
+            "cluster_size": 295,
+            "case_ids_sample": [
+              "CSE-003-CAS-00115",
+              "CSE-003-CAS-03274",
+              "CSE-003-CAS-04842",
+              "CSE-003-CAS-05324",
+              "CSE-003-CAS-04900"
+            ],
+            "note_text": "Alert triggered on high outbound data transfer. Analyzed NetFlow export; traffic matched automated offsite database replication window (Jira REF-6394). No data breach indicators."
+          }
+        ]
+      },
+      "peer_baseline": {
+        "peer_median_duplicate_ratio": 0.08,
+        "peer_acceptable_threshold": "< 0.20"
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "76.1% of cases exhibit copy-paste boilerplate notes. Interview lead analysts to verify whether investigations follow standard operating procedures or superficial logging.",
+      "created_at": "2026-09-28T19:16:26.987723+00:00"
+    }
+  ],
+  "CSE-004": [
+    {
+      "finding_id": "FND-CSE-004-EG04",
+      "cse_id": "CSE-004",
+      "detector_code": "EG-04",
+      "detector_name": "Template-Driven Boilerplate Notes",
+      "paradigm": "EXECUTION_GAP",
+      "capability_area": "Operational Discipline",
+      "severity": "HIGH",
+      "anomaly_score": 80.4,
+      "evidence": {
+        "duplicate_ratio": 0.67,
+        "total_clustered_cases": 568,
+        "cluster_count": 19,
+        "sample_boilerplate": [
+          {
+            "cluster_size": 22,
+            "case_ids_sample": [
+              "CSE-004-CAS-00809",
+              "CSE-004-CAS-00600",
+              "CSE-004-CAS-00199",
+              "CSE-004-CAS-00254",
+              "CSE-004-CAS-00013"
+            ],
+            "note_text": "Correlated firewall egress with threat intelligence feeds. External destination IP 198.51.100.127 identified as sinkholed domain. Endpoint quarantined via EDR isolation playbook. Artifacts collected for memory analysis. Escalated to Tier 2 IR."
+          },
+          {
+            "cluster_size": 14,
+            "case_ids_sample": [
+              "CSE-004-CAS-00040",
+              "CSE-004-CAS-00248",
+              "CSE-004-CAS-00473",
+              "CSE-004-CAS-00149",
+              "CSE-004-CAS-00605"
+            ],
+            "note_text": "Correlated firewall egress with threat intelligence feeds. External destination IP 198.51.100.175 identified as sinkholed domain. Endpoint quarantined via EDR isolation playbook. Artifacts collected for memory analysis. Escalated to Tier 2 IR."
+          },
+          {
+            "cluster_size": 95,
+            "case_ids_sample": [
+              "CSE-004-CAS-00669",
+              "CSE-004-CAS-00539",
+              "CSE-004-CAS-00589",
+              "CSE-004-CAS-00244",
+              "CSE-004-CAS-00635"
+            ],
+            "note_text": "Correlated firewall egress with threat intelligence feeds. External destination IP 198.51.100.182 identified as sinkholed domain. Endpoint quarantined via EDR isolation playbook. Artifacts collected for memory analysis. Escalated to Tier 2 IR."
+          }
+        ]
+      },
+      "peer_baseline": {
+        "peer_median_duplicate_ratio": 0.08,
+        "peer_acceptable_threshold": "< 0.20"
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "67.0% of cases exhibit copy-paste boilerplate notes. Interview lead analysts to verify whether investigations follow standard operating procedures or superficial logging.",
+      "created_at": "2026-09-28T19:16:27.373613+00:00"
+    }
+  ],
+  "CSE-005": [
+    {
+      "finding_id": "FND-CSE-005-EG04",
+      "cse_id": "CSE-005",
+      "detector_code": "EG-04",
+      "detector_name": "Template-Driven Boilerplate Notes",
+      "paradigm": "EXECUTION_GAP",
+      "capability_area": "Operational Discipline",
+      "severity": "HIGH",
+      "anomaly_score": 84.6,
+      "evidence": {
+        "duplicate_ratio": 0.705,
+        "total_clustered_cases": 1595,
+        "cluster_count": 37,
+        "sample_boilerplate": [
+          {
+            "cluster_size": 62,
+            "case_ids_sample": [
+              "CSE-005-CAS-01703",
+              "CSE-005-CAS-00326",
+              "CSE-005-CAS-00900",
+              "CSE-005-CAS-00441",
+              "CSE-005-CAS-01858"
+            ],
+            "note_text": "Review of authentication telemetry showed successful Kerberos ticket request following multiple pre-auth failures from usr_469. Reset credentials and revoked active session tokens. User confirmed login attempt during travel."
+          },
+          {
+            "cluster_size": 92,
+            "case_ids_sample": [
+              "CSE-005-CAS-02035",
+              "CSE-005-CAS-00642",
+              "CSE-005-CAS-00376",
+              "CSE-005-CAS-01961",
+              "CSE-005-CAS-00090"
+            ],
+            "note_text": "Alert triggered on high outbound data transfer. Analyzed NetFlow export; traffic matched automated offsite database replication window (Jira REF-1081). No data breach indicators."
+          },
+          {
+            "cluster_size": 7,
+            "case_ids_sample": [
+              "CSE-005-CAS-02157",
+              "CSE-005-CAS-01693",
+              "CSE-005-CAS-00011",
+              "CSE-005-CAS-00876",
+              "CSE-005-CAS-01400"
+            ],
+            "note_text": "Correlated firewall egress with threat intelligence feeds. External destination IP 198.51.100.239 identified as sinkholed domain. Endpoint quarantined via EDR isolation playbook. Artifacts collected for memory analysis. Escalated to Tier 2 IR."
+          }
+        ]
+      },
+      "peer_baseline": {
+        "peer_median_duplicate_ratio": 0.08,
+        "peer_acceptable_threshold": "< 0.20"
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "70.5% of cases exhibit copy-paste boilerplate notes. Interview lead analysts to verify whether investigations follow standard operating procedures or superficial logging.",
+      "created_at": "2026-09-28T19:16:28.170648+00:00"
+    }
+  ],
+  "CSE-006": [
+    {
+      "finding_id": "FND-CSE-006-EG01",
+      "cse_id": "CSE-006",
+      "detector_code": "EG-01",
+      "detector_name": "Fast-Closure on Critical Alerts",
+      "paradigm": "EXECUTION_GAP",
+      "capability_area": "Investigation",
+      "severity": "HIGH",
+      "anomaly_score": 58.2,
+      "evidence": {
+        "fast_closed_count": 583,
+        "total_crit_high_count": 1502,
+        "fast_closed_ratio": 0.388,
+        "sample_alert_ids": [
+          "CSE-006-ALT-000008",
+          "CSE-006-ALT-000013",
+          "CSE-006-ALT-000028",
+          "CSE-006-ALT-000030",
+          "CSE-006-ALT-000070",
+          "CSE-006-ALT-000112",
+          "CSE-006-ALT-000144",
+          "CSE-006-ALT-000165",
+          "CSE-006-ALT-000177",
+          "CSE-006-ALT-000212"
+        ],
+        "median_duration_seconds": 209.0
+      },
+      "peer_baseline": {
+        "peer_median_duration_seconds": 1639.8,
+        "peer_expected_fast_close_rate": "< 0.05"
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "Sample and audit the 583 High/Critical alerts closed in under 180.0s. Verify if automated playbooks were authorized or if triage was rubber-stamped without forensic review.",
+      "created_at": "2026-09-28T19:16:28.220513+00:00"
+    },
+    {
+      "finding_id": "FND-CSE-006-EG04",
+      "cse_id": "CSE-006",
+      "detector_code": "EG-04",
+      "detector_name": "Template-Driven Boilerplate Notes",
+      "paradigm": "EXECUTION_GAP",
+      "capability_area": "Operational Discipline",
+      "severity": "HIGH",
+      "anomaly_score": 90.2,
+      "evidence": {
+        "duplicate_ratio": 0.752,
+        "total_clustered_cases": 4034,
+        "cluster_count": 94,
+        "sample_boilerplate": [
+          {
+            "cluster_size": 158,
+            "case_ids_sample": [
+              "CSE-006-CAS-03166",
+              "CSE-006-CAS-03911",
+              "CSE-006-CAS-02536",
+              "CSE-006-CAS-01959",
+              "CSE-006-CAS-03926"
+            ],
+            "note_text": "Review of authentication telemetry showed successful Kerberos ticket request following multiple pre-auth failures from usr_537. Reset credentials and revoked active session tokens. User confirmed login attempt during travel."
+          },
+          {
+            "cluster_size": 553,
+            "case_ids_sample": [
+              "CSE-006-CAS-04792",
+              "CSE-006-CAS-00285",
+              "CSE-006-CAS-00346",
+              "CSE-006-CAS-01420",
+              "CSE-006-CAS-04741"
+            ],
+            "note_text": "Correlated firewall egress with threat intelligence feeds. External destination IP 198.51.100.5 identified as sinkholed domain. Endpoint quarantined via EDR isolation playbook. Artifacts collected for memory analysis. Escalated to Tier 2 IR."
+          },
+          {
+            "cluster_size": 293,
+            "case_ids_sample": [
+              "CSE-006-CAS-03796",
+              "CSE-006-CAS-04605",
+              "CSE-006-CAS-04392",
+              "CSE-006-CAS-01733",
+              "CSE-006-CAS-00556"
+            ],
+            "note_text": "Alert triggered on high outbound data transfer. Analyzed NetFlow export; traffic matched automated offsite database replication window (Jira REF-5886). No data breach indicators."
+          }
+        ]
+      },
+      "peer_baseline": {
+        "peer_median_duplicate_ratio": 0.08,
+        "peer_acceptable_threshold": "< 0.20"
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "75.2% of cases exhibit copy-paste boilerplate notes. Interview lead analysts to verify whether investigations follow standard operating procedures or superficial logging.",
+      "created_at": "2026-09-28T19:16:29.924670+00:00"
+    }
+  ],
+  "CSE-007": [
+    {
+      "finding_id": "FND-CSE-007-EG04",
+      "cse_id": "CSE-007",
+      "detector_code": "EG-04",
+      "detector_name": "Template-Driven Boilerplate Notes",
+      "paradigm": "EXECUTION_GAP",
+      "capability_area": "Operational Discipline",
+      "severity": "HIGH",
+      "anomaly_score": 100.0,
+      "evidence": {
+        "duplicate_ratio": 0.924,
+        "total_clustered_cases": 792,
+        "cluster_count": 14,
+        "sample_boilerplate": [
+          {
+            "cluster_size": 133,
+            "case_ids_sample": [
+              "CSE-007-CAS-00797",
+              "CSE-007-CAS-00769",
+              "CSE-007-CAS-00414",
+              "CSE-007-CAS-00482",
+              "CSE-007-CAS-00135"
+            ],
+            "note_text": "Investigated. No malicious activity found. False positive."
+          },
+          {
+            "cluster_size": 147,
+            "case_ids_sample": [
+              "CSE-007-CAS-00447",
+              "CSE-007-CAS-00248",
+              "CSE-007-CAS-00369",
+              "CSE-007-CAS-00092",
+              "CSE-007-CAS-00847"
+            ],
+            "note_text": "Checked alert. Normal user behavior confirmed. Closed."
+          },
+          {
+            "cluster_size": 157,
+            "case_ids_sample": [
+              "CSE-007-CAS-00515",
+              "CSE-007-CAS-00026",
+              "CSE-007-CAS-00004",
+              "CSE-007-CAS-00538",
+              "CSE-007-CAS-00758"
+            ],
+            "note_text": "Investigated. No malicious activity found. Resolved."
+          }
+        ]
+      },
+      "peer_baseline": {
+        "peer_median_duplicate_ratio": 0.08,
+        "peer_acceptable_threshold": "< 0.20"
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "92.4% of cases exhibit copy-paste boilerplate notes. Interview lead analysts to verify whether investigations follow standard operating procedures or superficial logging.",
+      "created_at": "2026-09-28T19:16:30.156805+00:00"
+    }
+  ],
+  "CSE-008": [
+    {
+      "finding_id": "FND-CSE-008-EG04",
+      "cse_id": "CSE-008",
+      "detector_code": "EG-04",
+      "detector_name": "Template-Driven Boilerplate Notes",
+      "paradigm": "EXECUTION_GAP",
+      "capability_area": "Operational Discipline",
+      "severity": "HIGH",
+      "anomaly_score": 88.0,
+      "evidence": {
+        "duplicate_ratio": 0.733,
+        "total_clustered_cases": 1700,
+        "cluster_count": 29,
+        "sample_boilerplate": [
+          {
+            "cluster_size": 71,
+            "case_ids_sample": [
+              "CSE-008-CAS-01335",
+              "CSE-008-CAS-00716",
+              "CSE-008-CAS-01298",
+              "CSE-008-CAS-00851",
+              "CSE-008-CAS-00125"
+            ],
+            "note_text": "Review of authentication telemetry showed successful Kerberos ticket request following multiple pre-auth failures from usr_663. Reset credentials and revoked active session tokens. User confirmed login attempt during travel."
+          },
+          {
+            "cluster_size": 183,
+            "case_ids_sample": [
+              "CSE-008-CAS-02000",
+              "CSE-008-CAS-01197",
+              "CSE-008-CAS-01293",
+              "CSE-008-CAS-00663",
+              "CSE-008-CAS-01215"
+            ],
+            "note_text": "Alert triggered on high outbound data transfer. Analyzed NetFlow export; traffic matched automated offsite database replication window (Jira REF-6595). No data breach indicators."
+          },
+          {
+            "cluster_size": 42,
+            "case_ids_sample": [
+              "CSE-008-CAS-00115",
+              "CSE-008-CAS-00716",
+              "CSE-008-CAS-00554",
+              "CSE-008-CAS-01174",
+              "CSE-008-CAS-01745"
+            ],
+            "note_text": "Review of authentication telemetry showed successful Kerberos ticket request following multiple pre-auth failures from usr_478. Reset credentials and revoked active session tokens. User confirmed login attempt during travel."
+          }
+        ]
+      },
+      "peer_baseline": {
+        "peer_median_duplicate_ratio": 0.08,
+        "peer_acceptable_threshold": "< 0.20"
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "73.3% of cases exhibit copy-paste boilerplate notes. Interview lead analysts to verify whether investigations follow standard operating procedures or superficial logging.",
+      "created_at": "2026-09-28T19:16:30.946042+00:00"
+    },
+    {
+      "finding_id": "FND-CSE-008-EG06",
+      "cse_id": "CSE-008",
+      "detector_code": "EG-06",
+      "detector_name": "Pre-SLA Metric Gaming",
+      "paradigm": "EXECUTION_GAP",
+      "capability_area": "Operational Discipline",
+      "severity": "HIGH",
+      "anomaly_score": 100.0,
+      "evidence": {
+        "pre_sla_closures": 4413,
+        "total_closures": 5400,
+        "pre_sla_ratio": 0.817,
+        "sample_alert_ids": [
+          "CSE-008-ALT-000002",
+          "CSE-008-ALT-000003",
+          "CSE-008-ALT-000005",
+          "CSE-008-ALT-000006",
+          "CSE-008-ALT-000007",
+          "CSE-008-ALT-000010",
+          "CSE-008-ALT-000012",
+          "CSE-008-ALT-000014",
+          "CSE-008-ALT-000015",
+          "CSE-008-ALT-000016"
+        ]
+      },
+      "peer_baseline": {
+        "peer_expected_ratio_50_60min": 0.05,
+        "anomaly_lift": 16.3
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "Abnormal concentration of alert closures (81.7%) in the 50-60 min window. Indicates artificial batch closure to meet SLA KPIs without genuine investigation depth.",
+      "created_at": "2026-09-28T19:16:30.951474+00:00"
+    }
+  ],
+  "CSE-009": [
+    {
+      "finding_id": "FND-CSE-009-EG04",
+      "cse_id": "CSE-009",
+      "detector_code": "EG-04",
+      "detector_name": "Template-Driven Boilerplate Notes",
+      "paradigm": "EXECUTION_GAP",
+      "capability_area": "Operational Discipline",
+      "severity": "HIGH",
+      "anomaly_score": 93.2,
+      "evidence": {
+        "duplicate_ratio": 0.777,
+        "total_clustered_cases": 4162,
+        "cluster_count": 91,
+        "sample_boilerplate": [
+          {
+            "cluster_size": 218,
+            "case_ids_sample": [
+              "CSE-009-CAS-02368",
+              "CSE-009-CAS-02469",
+              "CSE-009-CAS-01490",
+              "CSE-009-CAS-03107",
+              "CSE-009-CAS-02850"
+            ],
+            "note_text": "Review of authentication telemetry showed successful Kerberos ticket request following multiple pre-auth failures from usr_496. Reset credentials and revoked active session tokens. User confirmed login attempt during travel."
+          },
+          {
+            "cluster_size": 343,
+            "case_ids_sample": [
+              "CSE-009-CAS-02614",
+              "CSE-009-CAS-01790",
+              "CSE-009-CAS-02353",
+              "CSE-009-CAS-02819",
+              "CSE-009-CAS-05288"
+            ],
+            "note_text": "Alert triggered on high outbound data transfer. Analyzed NetFlow export; traffic matched automated offsite database replication window (Jira REF-9210). No data breach indicators."
+          },
+          {
+            "cluster_size": 422,
+            "case_ids_sample": [
+              "CSE-009-CAS-04530",
+              "CSE-009-CAS-05280",
+              "CSE-009-CAS-01945",
+              "CSE-009-CAS-02567",
+              "CSE-009-CAS-00793"
+            ],
+            "note_text": "Correlated firewall egress with threat intelligence feeds. External destination IP 198.51.100.185 identified as sinkholed domain. Endpoint quarantined via EDR isolation playbook. Artifacts collected for memory analysis. Escalated to Tier 2 IR."
+          }
+        ]
+      },
+      "peer_baseline": {
+        "peer_median_duplicate_ratio": 0.08,
+        "peer_acceptable_threshold": "< 0.20"
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "77.7% of cases exhibit copy-paste boilerplate notes. Interview lead analysts to verify whether investigations follow standard operating procedures or superficial logging.",
+      "created_at": "2026-09-28T19:16:32.737258+00:00"
+    },
+    {
+      "finding_id": "FND-CSE-009-EG09",
+      "cse_id": "CSE-009",
+      "detector_code": "EG-09",
+      "detector_name": "Analyst Workload Concentration",
+      "paradigm": "EXECUTION_GAP",
+      "capability_area": "Security Operations",
+      "severity": "HIGH",
+      "anomaly_score": 92.3,
+      "evidence": {
+        "gini_coefficient": 0.84,
+        "top_analyst_id": "CSE-009-ANA-01",
+        "top_analyst_share": 0.888,
+        "total_analysts": 18
+      },
+      "peer_baseline": {
+        "peer_median_gini": 0.28,
+        "peer_acceptable_gini": "< 0.50"
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "Analyst CSE-009-ANA-01 closed 88.8% of all entity alerts (Gini=0.84). Suggests single-point-of-failure risk, shift fatigue, or automated credential sharing.",
+      "created_at": "2026-09-28T19:16:32.745780+00:00"
+    }
+  ],
+  "CSE-010": [
+    {
+      "finding_id": "FND-CSE-010-EG04",
+      "cse_id": "CSE-010",
+      "detector_code": "EG-04",
+      "detector_name": "Template-Driven Boilerplate Notes",
+      "paradigm": "EXECUTION_GAP",
+      "capability_area": "Operational Discipline",
+      "severity": "HIGH",
+      "anomaly_score": 83.8,
+      "evidence": {
+        "duplicate_ratio": 0.698,
+        "total_clustered_cases": 601,
+        "cluster_count": 18,
+        "sample_boilerplate": [
+          {
+            "cluster_size": 46,
+            "case_ids_sample": [
+              "CSE-010-CAS-00122",
+              "CSE-010-CAS-00813",
+              "CSE-010-CAS-00341",
+              "CSE-010-CAS-00256",
+              "CSE-010-CAS-00001"
+            ],
+            "note_text": "Alert triggered on high outbound data transfer. Analyzed NetFlow export; traffic matched automated offsite database replication window (Jira REF-5914). No data breach indicators."
+          },
+          {
+            "cluster_size": 38,
+            "case_ids_sample": [
+              "CSE-010-CAS-00678",
+              "CSE-010-CAS-00254",
+              "CSE-010-CAS-00108",
+              "CSE-010-CAS-00836",
+              "CSE-010-CAS-00047"
+            ],
+            "note_text": "Correlated firewall egress with threat intelligence feeds. External destination IP 198.51.100.169 identified as sinkholed domain. Endpoint quarantined via EDR isolation playbook. Artifacts collected for memory analysis. Escalated to Tier 2 IR."
+          },
+          {
+            "cluster_size": 57,
+            "case_ids_sample": [
+              "CSE-010-CAS-00266",
+              "CSE-010-CAS-00370",
+              "CSE-010-CAS-00565",
+              "CSE-010-CAS-00700",
+              "CSE-010-CAS-00662"
+            ],
+            "note_text": "Alert triggered on high outbound data transfer. Analyzed NetFlow export; traffic matched automated offsite database replication window (Jira REF-2941). No data breach indicators."
+          }
+        ]
+      },
+      "peer_baseline": {
+        "peer_median_duplicate_ratio": 0.08,
+        "peer_acceptable_threshold": "< 0.20"
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "69.8% of cases exhibit copy-paste boilerplate notes. Interview lead analysts to verify whether investigations follow standard operating procedures or superficial logging.",
+      "created_at": "2026-09-28T19:16:33.076237+00:00"
+    }
+  ],
+  "CSE-011": [
+    {
+      "finding_id": "FND-CSE-011-EG04",
+      "cse_id": "CSE-011",
+      "detector_code": "EG-04",
+      "detector_name": "Template-Driven Boilerplate Notes",
+      "paradigm": "EXECUTION_GAP",
+      "capability_area": "Operational Discipline",
+      "severity": "HIGH",
+      "anomaly_score": 87.6,
+      "evidence": {
+        "duplicate_ratio": 0.73,
+        "total_clustered_cases": 1689,
+        "cluster_count": 36,
+        "sample_boilerplate": [
+          {
+            "cluster_size": 21,
+            "case_ids_sample": [
+              "CSE-011-CAS-01828",
+              "CSE-011-CAS-01356",
+              "CSE-011-CAS-01107",
+              "CSE-011-CAS-00260",
+              "CSE-011-CAS-00002"
+            ],
+            "note_text": "Alert triggered on high outbound data transfer. Analyzed NetFlow export; traffic matched automated offsite database replication window (Jira REF-1309). No data breach indicators."
+          },
+          {
+            "cluster_size": 73,
+            "case_ids_sample": [
+              "CSE-011-CAS-00076",
+              "CSE-011-CAS-00019",
+              "CSE-011-CAS-00917",
+              "CSE-011-CAS-01285",
+              "CSE-011-CAS-00781"
+            ],
+            "note_text": "Alert triggered on high outbound data transfer. Analyzed NetFlow export; traffic matched automated offsite database replication window (Jira REF-9958). No data breach indicators."
+          },
+          {
+            "cluster_size": 89,
+            "case_ids_sample": [
+              "CSE-011-CAS-00233",
+              "CSE-011-CAS-01745",
+              "CSE-011-CAS-01492",
+              "CSE-011-CAS-00771",
+              "CSE-011-CAS-01379"
+            ],
+            "note_text": "Review of authentication telemetry showed successful Kerberos ticket request following multiple pre-auth failures from usr_267. Reset credentials and revoked active session tokens. User confirmed login attempt during travel."
+          }
+        ]
+      },
+      "peer_baseline": {
+        "peer_median_duplicate_ratio": 0.08,
+        "peer_acceptable_threshold": "< 0.20"
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "73.0% of cases exhibit copy-paste boilerplate notes. Interview lead analysts to verify whether investigations follow standard operating procedures or superficial logging.",
+      "created_at": "2026-09-28T19:16:33.878521+00:00"
+    },
+    {
+      "finding_id": "FND-CSE-011-NS01",
+      "cse_id": "CSE-011",
+      "detector_code": "NS-01",
+      "detector_name": "Silent Critical CII Assets",
+      "paradigm": "NEGATIVE_SPACE",
+      "capability_area": "Threat Detection",
+      "severity": "CRITICAL",
+      "anomaly_score": 80.0,
+      "evidence": {
+        "silent_tier1_count": 3,
+        "total_tier1_count": 18,
+        "silent_tier1_asset_ids": [
+          "CSE-011-AST-0015",
+          "CSE-011-AST-0018",
+          "CSE-011-AST-0006"
+        ],
+        "silent_asset_types": [
+          "Database Server (Customer/PII/Financial)",
+          "Engineering Workstation",
+          "Core Router / Edge Firewall"
+        ]
+      },
+      "peer_baseline": {
+        "peer_median_alerts_per_t1_asset": 45.0,
+        "peer_expected_silent_t1_count": 0
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "3 Core CII (Tier 1) assets have ZERO alert telemetry in the audit window. Audit SIEM connector health, endpoint agent installation, and syslog forwarding configurations for these assets.",
+      "created_at": "2026-09-28T19:16:33.900498+00:00"
+    }
+  ],
+  "CSE-012": [
+    {
+      "finding_id": "FND-CSE-012-EG04",
+      "cse_id": "CSE-012",
+      "detector_code": "EG-04",
+      "detector_name": "Template-Driven Boilerplate Notes",
+      "paradigm": "EXECUTION_GAP",
+      "capability_area": "Operational Discipline",
+      "severity": "HIGH",
+      "anomaly_score": 88.6,
+      "evidence": {
+        "duplicate_ratio": 0.738,
+        "total_clustered_cases": 3896,
+        "cluster_count": 82,
+        "sample_boilerplate": [
+          {
+            "cluster_size": 417,
+            "case_ids_sample": [
+              "CSE-012-CAS-00755",
+              "CSE-012-CAS-03347",
+              "CSE-012-CAS-03032",
+              "CSE-012-CAS-02501",
+              "CSE-012-CAS-01012"
+            ],
+            "note_text": "Correlated firewall egress with threat intelligence feeds. External destination IP 198.51.100.46 identified as sinkholed domain. Endpoint quarantined via EDR isolation playbook. Artifacts collected for memory analysis. Escalated to Tier 2 IR."
+          },
+          {
+            "cluster_size": 150,
+            "case_ids_sample": [
+              "CSE-012-CAS-04470",
+              "CSE-012-CAS-03319",
+              "CSE-012-CAS-04651",
+              "CSE-012-CAS-04500",
+              "CSE-012-CAS-03032"
+            ],
+            "note_text": "Correlated firewall egress with threat intelligence feeds. External destination IP 198.51.100.220 identified as sinkholed domain. Endpoint quarantined via EDR isolation playbook. Artifacts collected for memory analysis. Escalated to Tier 2 IR."
+          },
+          {
+            "cluster_size": 211,
+            "case_ids_sample": [
+              "CSE-012-CAS-00980",
+              "CSE-012-CAS-03014",
+              "CSE-012-CAS-00777",
+              "CSE-012-CAS-01588",
+              "CSE-012-CAS-04407"
+            ],
+            "note_text": "Review of authentication telemetry showed successful Kerberos ticket request following multiple pre-auth failures from usr_491. Reset credentials and revoked active session tokens. User confirmed login attempt during travel."
+          }
+        ]
+      },
+      "peer_baseline": {
+        "peer_median_duplicate_ratio": 0.08,
+        "peer_acceptable_threshold": "< 0.20"
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "73.8% of cases exhibit copy-paste boilerplate notes. Interview lead analysts to verify whether investigations follow standard operating procedures or superficial logging.",
+      "created_at": "2026-09-28T19:16:35.684737+00:00"
+    },
+    {
+      "finding_id": "FND-CSE-012-NS02",
+      "cse_id": "CSE-012",
+      "detector_code": "NS-02",
+      "detector_name": "Missing Core Alert Categories",
+      "paradigm": "NEGATIVE_SPACE",
+      "capability_area": "Threat Detection",
+      "severity": "HIGH",
+      "anomaly_score": 73.6,
+      "evidence": {
+        "missing_categories": [
+          "Authentication Anomaly",
+          "Privileged Account Abuse"
+        ],
+        "kl_divergence": 0.239,
+        "entity_category_count": 9,
+        "peer_category_count": 11
+      },
+      "peer_baseline": {
+        "peer_expected_category_coverage": 12,
+        "peer_expected_share_for_missing": {
+          "Authentication Anomaly": "14.3%",
+          "Privileged Account Abuse": "7.0%"
+        }
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "Entity has 0 alerts in key categories: Authentication Anomaly, Privileged Account Abuse (KL divergence = 0.24). Indicates rule degradation, disabled SIEM use-cases, or unmonitored log sources.",
+      "created_at": "2026-09-28T19:16:35.713396+00:00"
+    },
+    {
+      "finding_id": "FND-CSE-012-UNSUP01",
+      "cse_id": "CSE-012",
+      "detector_code": "UNSUP-01",
+      "detector_name": "Multi-Dimensional Behavioral Outlier (Isolation Forest)",
+      "paradigm": "UNSUPERVISED",
+      "capability_area": "Cyber Resilience",
+      "severity": "MEDIUM",
+      "anomaly_score": 35.1,
+      "evidence": {
+        "raw_anomaly_score": 0.5755,
+        "top_deviating_features_z_scores": {
+          "category_count": -2.65,
+          "total_alerts": 1.42,
+          "active_assets": 1.41,
+          "active_analysts": 1.39
+        }
+      },
+      "peer_baseline": {
+        "population_feature_means": {
+          "total_alerts": 6282.38,
+          "active_assets": 141.5,
+          "category_count": 10.75,
+          "active_analysts": 9.94,
+          "crit_ratio": 0.03,
+          "fp_ratio": 0.66,
+          "mttr_median_min": 25.19,
+          "fast_close_crit_ratio": 0.05
+        }
+      },
+      "feature_contributions": {
+        "category_count": -2.65,
+        "total_alerts": 1.42,
+        "active_assets": 1.41,
+        "active_analysts": 1.39
+      },
+      "supervisory_recommendation": "Isolation Forest identified CSE-012 as a behavioral outlier across dimensions: category_count, total_alerts, active_assets, active_analysts. Conduct cross-control audit.",
+      "created_at": "2026-09-28T19:16:23.982697+00:00"
+    }
+  ],
+  "CSE-013": [
+    {
+      "finding_id": "FND-CSE-013-EG04",
+      "cse_id": "CSE-013",
+      "detector_code": "EG-04",
+      "detector_name": "Template-Driven Boilerplate Notes",
+      "paradigm": "EXECUTION_GAP",
+      "capability_area": "Operational Discipline",
+      "severity": "HIGH",
+      "anomaly_score": 81.1,
+      "evidence": {
+        "duplicate_ratio": 0.676,
+        "total_clustered_cases": 459,
+        "cluster_count": 20,
+        "sample_boilerplate": [
+          {
+            "cluster_size": 28,
+            "case_ids_sample": [
+              "CSE-013-CAS-00135",
+              "CSE-013-CAS-00064",
+              "CSE-013-CAS-00584",
+              "CSE-013-CAS-00512",
+              "CSE-013-CAS-00104"
+            ],
+            "note_text": "Review of authentication telemetry showed successful Kerberos ticket request following multiple pre-auth failures from usr_850. Reset credentials and revoked active session tokens. User confirmed login attempt during travel."
+          },
+          {
+            "cluster_size": 56,
+            "case_ids_sample": [
+              "CSE-013-CAS-00252",
+              "CSE-013-CAS-00661",
+              "CSE-013-CAS-00056",
+              "CSE-013-CAS-00283",
+              "CSE-013-CAS-00045"
+            ],
+            "note_text": "Correlated firewall egress with threat intelligence feeds. External destination IP 198.51.100.248 identified as sinkholed domain. Endpoint quarantined via EDR isolation playbook. Artifacts collected for memory analysis. Escalated to Tier 2 IR."
+          },
+          {
+            "cluster_size": 35,
+            "case_ids_sample": [
+              "CSE-013-CAS-00318",
+              "CSE-013-CAS-00349",
+              "CSE-013-CAS-00047",
+              "CSE-013-CAS-00093",
+              "CSE-013-CAS-00248"
+            ],
+            "note_text": "Alert triggered on high outbound data transfer. Analyzed NetFlow export; traffic matched automated offsite database replication window (Jira REF-7353). No data breach indicators."
+          }
+        ]
+      },
+      "peer_baseline": {
+        "peer_median_duplicate_ratio": 0.08,
+        "peer_acceptable_threshold": "< 0.20"
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "67.6% of cases exhibit copy-paste boilerplate notes. Interview lead analysts to verify whether investigations follow standard operating procedures or superficial logging.",
+      "created_at": "2026-09-28T19:16:35.966979+00:00"
+    },
+    {
+      "finding_id": "FND-CSE-013-NS04",
+      "cse_id": "CSE-013",
+      "detector_code": "NS-04",
+      "detector_name": "Orphan Critical Alerts (No Case)",
+      "paradigm": "NEGATIVE_SPACE",
+      "capability_area": "Investigation",
+      "severity": "HIGH",
+      "anomaly_score": 91.3,
+      "evidence": {
+        "orphan_critical_high_count": 188,
+        "total_critical_high_count": 247,
+        "orphan_ratio": 0.761,
+        "sample_orphan_alert_ids": [
+          "CSE-013-ALT-000158",
+          "CSE-013-ALT-000473",
+          "CSE-013-ALT-001443",
+          "CSE-013-ALT-001568",
+          "CSE-013-ALT-001622",
+          "CSE-013-ALT-001670",
+          "CSE-013-ALT-000023",
+          "CSE-013-ALT-000132",
+          "CSE-013-ALT-000264",
+          "CSE-013-ALT-000352"
+        ]
+      },
+      "peer_baseline": {
+        "peer_expected_orphan_rate": "< 0.05"
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "188 High/Critical alerts (76.1%) were closed without opening an investigation case. Review why critical alerts bypassed case management workflows.",
+      "created_at": "2026-09-28T19:16:35.999208+00:00"
+    }
+  ],
+  "CSE-014": [
+    {
+      "finding_id": "FND-CSE-014-EG04",
+      "cse_id": "CSE-014",
+      "detector_code": "EG-04",
+      "detector_name": "Template-Driven Boilerplate Notes",
+      "paradigm": "EXECUTION_GAP",
+      "capability_area": "Operational Discipline",
+      "severity": "HIGH",
+      "anomaly_score": 85.3,
+      "evidence": {
+        "duplicate_ratio": 0.711,
+        "total_clustered_cases": 1138,
+        "cluster_count": 25,
+        "sample_boilerplate": [
+          {
+            "cluster_size": 44,
+            "case_ids_sample": [
+              "CSE-014-CAS-00868",
+              "CSE-014-CAS-00009",
+              "CSE-014-CAS-01576",
+              "CSE-014-CAS-00015",
+              "CSE-014-CAS-00781"
+            ],
+            "note_text": "Review of authentication telemetry showed successful Kerberos ticket request following multiple pre-auth failures from usr_155. Reset credentials and revoked active session tokens. User confirmed login attempt during travel."
+          },
+          {
+            "cluster_size": 83,
+            "case_ids_sample": [
+              "CSE-014-CAS-00445",
+              "CSE-014-CAS-00475",
+              "CSE-014-CAS-01273",
+              "CSE-014-CAS-01562",
+              "CSE-014-CAS-00619"
+            ],
+            "note_text": "Review of authentication telemetry showed successful Kerberos ticket request following multiple pre-auth failures from usr_549. Reset credentials and revoked active session tokens. User confirmed login attempt during travel."
+          },
+          {
+            "cluster_size": 25,
+            "case_ids_sample": [
+              "CSE-014-CAS-00752",
+              "CSE-014-CAS-00633",
+              "CSE-014-CAS-01456",
+              "CSE-014-CAS-01314",
+              "CSE-014-CAS-01276"
+            ],
+            "note_text": "Review of authentication telemetry showed successful Kerberos ticket request following multiple pre-auth failures from usr_562. Reset credentials and revoked active session tokens. User confirmed login attempt during travel."
+          }
+        ]
+      },
+      "peer_baseline": {
+        "peer_median_duplicate_ratio": 0.08,
+        "peer_acceptable_threshold": "< 0.20"
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "71.1% of cases exhibit copy-paste boilerplate notes. Interview lead analysts to verify whether investigations follow standard operating procedures or superficial logging.",
+      "created_at": "2026-09-28T19:16:36.534729+00:00"
+    }
+  ],
+  "CSE-015": [
+    {
+      "finding_id": "FND-CSE-015-EG01",
+      "cse_id": "CSE-015",
+      "detector_code": "EG-01",
+      "detector_name": "Fast-Closure on Critical Alerts",
+      "paradigm": "EXECUTION_GAP",
+      "capability_area": "Investigation",
+      "severity": "CRITICAL",
+      "anomaly_score": 61.9,
+      "evidence": {
+        "fast_closed_count": 618,
+        "total_crit_high_count": 1497,
+        "fast_closed_ratio": 0.413,
+        "sample_alert_ids": [
+          "CSE-015-ALT-000015",
+          "CSE-015-ALT-000025",
+          "CSE-015-ALT-000120",
+          "CSE-015-ALT-000140",
+          "CSE-015-ALT-000144",
+          "CSE-015-ALT-000168",
+          "CSE-015-ALT-000171",
+          "CSE-015-ALT-000181",
+          "CSE-015-ALT-000187",
+          "CSE-015-ALT-000208"
+        ],
+        "median_duration_seconds": 206.0
+      },
+      "peer_baseline": {
+        "peer_median_duration_seconds": 1639.8,
+        "peer_expected_fast_close_rate": "< 0.05"
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "Sample and audit the 618 High/Critical alerts closed in under 180.0s. Verify if automated playbooks were authorized or if triage was rubber-stamped without forensic review.",
+      "created_at": "2026-09-28T19:16:36.581952+00:00"
+    },
+    {
+      "finding_id": "FND-CSE-015-EG04",
+      "cse_id": "CSE-015",
+      "detector_code": "EG-04",
+      "detector_name": "Template-Driven Boilerplate Notes",
+      "paradigm": "EXECUTION_GAP",
+      "capability_area": "Operational Discipline",
+      "severity": "HIGH",
+      "anomaly_score": 100.0,
+      "evidence": {
+        "duplicate_ratio": 0.954,
+        "total_clustered_cases": 5154,
+        "cluster_count": 22,
+        "sample_boilerplate": [
+          {
+            "cluster_size": 985,
+            "case_ids_sample": [
+              "CSE-015-CAS-03753",
+              "CSE-015-CAS-03950",
+              "CSE-015-CAS-04907",
+              "CSE-015-CAS-00836",
+              "CSE-015-CAS-03856"
+            ],
+            "note_text": "Checked alert. Normal user behavior confirmed. Closed."
+          },
+          {
+            "cluster_size": 936,
+            "case_ids_sample": [
+              "CSE-015-CAS-01896",
+              "CSE-015-CAS-04121",
+              "CSE-015-CAS-03027",
+              "CSE-015-CAS-04300",
+              "CSE-015-CAS-00165"
+            ],
+            "note_text": "Reviewed logs. Alert verified benign. Closing case."
+          },
+          {
+            "cluster_size": 952,
+            "case_ids_sample": [
+              "CSE-015-CAS-00498",
+              "CSE-015-CAS-00270",
+              "CSE-015-CAS-04538",
+              "CSE-015-CAS-02732",
+              "CSE-015-CAS-00012"
+            ],
+            "note_text": "Investigated. No malicious activity found. Resolved."
+          }
+        ]
+      },
+      "peer_baseline": {
+        "peer_median_duplicate_ratio": 0.08,
+        "peer_acceptable_threshold": "< 0.20"
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "95.4% of cases exhibit copy-paste boilerplate notes. Interview lead analysts to verify whether investigations follow standard operating procedures or superficial logging.",
+      "created_at": "2026-09-28T19:16:37.652468+00:00"
+    },
+    {
+      "finding_id": "FND-CSE-015-NS01",
+      "cse_id": "CSE-015",
+      "detector_code": "NS-01",
+      "detector_name": "Silent Critical CII Assets",
+      "paradigm": "NEGATIVE_SPACE",
+      "capability_area": "Threat Detection",
+      "severity": "CRITICAL",
+      "anomaly_score": 68.6,
+      "evidence": {
+        "silent_tier1_count": 3,
+        "total_tier1_count": 42,
+        "silent_tier1_asset_ids": [
+          "CSE-015-AST-0022",
+          "CSE-015-AST-0019",
+          "CSE-015-AST-0001"
+        ],
+        "silent_asset_types": [
+          "SCADA Master Terminal Unit (MTU)",
+          "Corporate Email Gateway",
+          "Domain Controller"
+        ]
+      },
+      "peer_baseline": {
+        "peer_median_alerts_per_t1_asset": 45.0,
+        "peer_expected_silent_t1_count": 0
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "3 Core CII (Tier 1) assets have ZERO alert telemetry in the audit window. Audit SIEM connector health, endpoint agent installation, and syslog forwarding configurations for these assets.",
+      "created_at": "2026-09-28T19:16:37.676211+00:00"
+    },
+    {
+      "finding_id": "FND-CSE-015-UNSUP01",
+      "cse_id": "CSE-015",
+      "detector_code": "UNSUP-01",
+      "detector_name": "Multi-Dimensional Behavioral Outlier (Isolation Forest)",
+      "paradigm": "UNSUPERVISED",
+      "capability_area": "Cyber Resilience",
+      "severity": "MEDIUM",
+      "anomaly_score": 30.8,
+      "evidence": {
+        "raw_anomaly_score": 0.5541,
+        "top_deviating_features_z_scores": {
+          "fast_close_crit_ratio": 2.74,
+          "total_alerts": 1.42,
+          "active_analysts": 1.39,
+          "active_assets": 1.38
+        }
+      },
+      "peer_baseline": {
+        "population_feature_means": {
+          "total_alerts": 6282.38,
+          "active_assets": 141.5,
+          "category_count": 10.75,
+          "active_analysts": 9.94,
+          "crit_ratio": 0.03,
+          "fp_ratio": 0.66,
+          "mttr_median_min": 25.19,
+          "fast_close_crit_ratio": 0.05
+        }
+      },
+      "feature_contributions": {
+        "fast_close_crit_ratio": 2.74,
+        "total_alerts": 1.42,
+        "active_analysts": 1.39,
+        "active_assets": 1.38
+      },
+      "supervisory_recommendation": "Isolation Forest identified CSE-015 as a behavioral outlier across dimensions: fast_close_crit_ratio, total_alerts, active_analysts, active_assets. Conduct cross-control audit.",
+      "created_at": "2026-09-28T19:16:23.983233+00:00"
+    }
+  ],
+  "CSE-016": [
+    {
+      "finding_id": "FND-CSE-016-EG04",
+      "cse_id": "CSE-016",
+      "detector_code": "EG-04",
+      "detector_name": "Template-Driven Boilerplate Notes",
+      "paradigm": "EXECUTION_GAP",
+      "capability_area": "Operational Discipline",
+      "severity": "HIGH",
+      "anomaly_score": 88.2,
+      "evidence": {
+        "duplicate_ratio": 0.735,
+        "total_clustered_cases": 647,
+        "cluster_count": 22,
+        "sample_boilerplate": [
+          {
+            "cluster_size": 66,
+            "case_ids_sample": [
+              "CSE-016-CAS-00387",
+              "CSE-016-CAS-00736",
+              "CSE-016-CAS-00246",
+              "CSE-016-CAS-00690",
+              "CSE-016-CAS-00271"
+            ],
+            "note_text": "Correlated firewall egress with threat intelligence feeds. External destination IP 198.51.100.150 identified as sinkholed domain. Endpoint quarantined via EDR isolation playbook. Artifacts collected for memory analysis. Escalated to Tier 2 IR."
+          },
+          {
+            "cluster_size": 57,
+            "case_ids_sample": [
+              "CSE-016-CAS-00246",
+              "CSE-016-CAS-00101",
+              "CSE-016-CAS-00430",
+              "CSE-016-CAS-00487",
+              "CSE-016-CAS-00248"
+            ],
+            "note_text": "Correlated firewall egress with threat intelligence feeds. External destination IP 198.51.100.31 identified as sinkholed domain. Endpoint quarantined via EDR isolation playbook. Artifacts collected for memory analysis. Escalated to Tier 2 IR."
+          },
+          {
+            "cluster_size": 29,
+            "case_ids_sample": [
+              "CSE-016-CAS-00272",
+              "CSE-016-CAS-00816",
+              "CSE-016-CAS-00700",
+              "CSE-016-CAS-00184",
+              "CSE-016-CAS-00647"
+            ],
+            "note_text": "Review of authentication telemetry showed successful Kerberos ticket request following multiple pre-auth failures from usr_226. Reset credentials and revoked active session tokens. User confirmed login attempt during travel."
+          }
+        ]
+      },
+      "peer_baseline": {
+        "peer_median_duplicate_ratio": 0.08,
+        "peer_acceptable_threshold": "< 0.20"
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "73.5% of cases exhibit copy-paste boilerplate notes. Interview lead analysts to verify whether investigations follow standard operating procedures or superficial logging.",
+      "created_at": "2026-09-28T19:16:37.998393+00:00"
+    },
+    {
+      "finding_id": "FND-CSE-016-EG06",
+      "cse_id": "CSE-016",
+      "detector_code": "EG-06",
+      "detector_name": "Pre-SLA Metric Gaming",
+      "paradigm": "EXECUTION_GAP",
+      "capability_area": "Operational Discipline",
+      "severity": "HIGH",
+      "anomaly_score": 100.0,
+      "evidence": {
+        "pre_sla_closures": 1653,
+        "total_closures": 2025,
+        "pre_sla_ratio": 0.816,
+        "sample_alert_ids": [
+          "CSE-016-ALT-000001",
+          "CSE-016-ALT-000002",
+          "CSE-016-ALT-000003",
+          "CSE-016-ALT-000004",
+          "CSE-016-ALT-000005",
+          "CSE-016-ALT-000006",
+          "CSE-016-ALT-000007",
+          "CSE-016-ALT-000008",
+          "CSE-016-ALT-000009",
+          "CSE-016-ALT-000010"
+        ]
+      },
+      "peer_baseline": {
+        "peer_expected_ratio_50_60min": 0.05,
+        "anomaly_lift": 16.3
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "Abnormal concentration of alert closures (81.6%) in the 50-60 min window. Indicates artificial batch closure to meet SLA KPIs without genuine investigation depth.",
+      "created_at": "2026-09-28T19:16:38.003593+00:00"
+    },
+    {
+      "finding_id": "FND-CSE-016-EG11",
+      "cse_id": "CSE-016",
+      "detector_code": "EG-11",
+      "detector_name": "Claim-vs-Evidence Metric Discrepancy",
+      "paradigm": "EXECUTION_GAP",
+      "capability_area": "Governance & Oversight",
+      "severity": "HIGH",
+      "anomaly_score": 97.0,
+      "evidence": {
+        "reported_mttr_minutes": 14.5,
+        "observed_mttr_minutes": 56.3,
+        "discrepancy_factor": 3.9,
+        "absolute_gap_minutes": 41.8
+      },
+      "peer_baseline": {
+        "peer_median_mttr_minutes": 35.0,
+        "acceptable_discrepancy_margin": "\u00b1 20%"
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "Self-assessed MTTR is 14.5 min, whereas actual observed telemetry MTTR is 56.3 min (3.9x discrepancy). Request formal justification for supervisory reporting inaccuracies.",
+      "created_at": "2026-09-28T19:16:38.010686+00:00"
+    },
+    {
+      "finding_id": "FND-CSE-016-NS02",
+      "cse_id": "CSE-016",
+      "detector_code": "NS-02",
+      "detector_name": "Missing Core Alert Categories",
+      "paradigm": "NEGATIVE_SPACE",
+      "capability_area": "Threat Detection",
+      "severity": "HIGH",
+      "anomaly_score": 73.6,
+      "evidence": {
+        "missing_categories": [
+          "Authentication Anomaly",
+          "Privileged Account Abuse"
+        ],
+        "kl_divergence": 0.241,
+        "entity_category_count": 9,
+        "peer_category_count": 11
+      },
+      "peer_baseline": {
+        "peer_expected_category_coverage": 12,
+        "peer_expected_share_for_missing": {
+          "Authentication Anomaly": "14.3%",
+          "Privileged Account Abuse": "7.0%"
+        }
+      },
+      "feature_contributions": null,
+      "supervisory_recommendation": "Entity has 0 alerts in key categories: Authentication Anomaly, Privileged Account Abuse (KL divergence = 0.24). Indicates rule degradation, disabled SIEM use-cases, or unmonitored log sources.",
+      "created_at": "2026-09-28T19:16:38.025653+00:00"
+    },
+    {
+      "finding_id": "FND-CSE-016-UNSUP01",
+      "cse_id": "CSE-016",
+      "detector_code": "UNSUP-01",
+      "detector_name": "Multi-Dimensional Behavioral Outlier (Isolation Forest)",
+      "paradigm": "UNSUPERVISED",
+      "capability_area": "Cyber Resilience",
+      "severity": "MEDIUM",
+      "anomaly_score": 42.7,
+      "evidence": {
+        "raw_anomaly_score": 0.6134,
+        "top_deviating_features_z_scores": {
+          "category_count": -2.65,
+          "mttr_median_min": 2.62,
+          "active_analysts": -1.02,
+          "active_assets": -0.99
+        }
+      },
+      "peer_baseline": {
+        "population_feature_means": {
+          "total_alerts": 6282.38,
+          "active_assets": 141.5,
+          "category_count": 10.75,
+          "active_analysts": 9.94,
+          "crit_ratio": 0.03,
+          "fp_ratio": 0.66,
+          "mttr_median_min": 25.19,
+          "fast_close_crit_ratio": 0.05
+        }
+      },
+      "feature_contributions": {
+        "category_count": -2.65,
+        "mttr_median_min": 2.62,
+        "active_analysts": -1.02,
+        "active_assets": -0.99
+      },
+      "supervisory_recommendation": "Isolation Forest identified CSE-016 as a behavioral outlier across dimensions: category_count, mttr_median_min, active_analysts, active_assets. Conduct cross-control audit.",
+      "created_at": "2026-09-28T19:16:23.983048+00:00"
+    }
+  ]
+}

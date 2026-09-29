@@ -172,9 +172,11 @@ bootstrap_if_needed()
 
 from sat_sa.detectors.base import SupervisoryFinding
 
-# Instant Fast Load Function (Reads from pre-persisted disk cache)
+# Instant Fast Load Function (Reads from pre-persisted disk cache & caches in RAM)
+@st.cache_data(show_spinner=False)
 def get_cached_scores_and_findings():
     findings_json_path = lake.lake_dir / "findings.json"
+
     if lake.table_exists("scores") and findings_json_path.exists():
         try:
             scores_df = lake.query_df("SELECT * FROM scores ORDER BY rank")
